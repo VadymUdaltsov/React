@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './Content.module.css';
+import MyPosts from './MyPosts/MyPosts.jsx';
 
 /* let s = {
     'content': 'Content_content__GgJDS',
@@ -15,20 +16,7 @@ const Content = () => {
             <div>
                 <img src='https://d5nunyagcicgy.cloudfront.net/external_assets/hero_examples/hair_beach_v391182663/original.jpeg' alt='user' className='img-user' />
             </div>
-            <div>
-                My posts
-                <div>
-                    New post
-                </div>
-                <div>
-                    <div>
-                        Post 1
-                    </div>
-                    <div>
-                        Post 2
-                    </div>
-                </div>
-            </div>
+            <MyPosts />
         </div>
     ) 
     

@@ -8,10 +8,10 @@ const Navbar = () => {
                 <a href='#s'>Profile</a>
             </div>
             <div>
-                <a href='#s'>Messages</a>
+                <a className={s.item} href='#s'>Messages</a>
             </div>
             <div>
-                <a href='#s'>News</a>
+                <a className={`${s.item} ${s.active}`} href='#s'>News</a> {/* так мы пишем если два класса */}
             </div>
             <div>
                 <a href='#s'>Music</a>

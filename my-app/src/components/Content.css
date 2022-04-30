@@ -1,0 +1,9 @@
+.content {
+    grid-area: c;
+    background-color: blue;
+}
+
+.content .img-bich {
+    width: 100%;
+    height: 400px;
+}

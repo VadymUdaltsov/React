@@ -1,25 +1,17 @@
 import React from 'react';
-import s from './MyPosts.module.css';
-
-/* let s = {
-    'content': 'Content_content__GgJDS',
-    'img-bich': 'Content_img-bich__ubn4y'
-}; */
+import Post from './Post/Post.jsx'
 
 const MyPosts = () => {
     return (
         <div>
             My posts
             <div>
-                New post
+                <textarea></textarea>
+                <button>Add post</button>
             </div>
             <div>
-                <div className={s.item}>
-                    Post 1
-                </div>
-                <div className={s.item}>
-                    Post 2
-                </div>
+                <Post message='Hi, how are you?' value='5' />
+                <Post message="It's my first post." value='15' />
             </div>
         </div>
     ) 

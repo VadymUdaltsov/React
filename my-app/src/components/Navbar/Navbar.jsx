@@ -11,13 +11,13 @@ const Navbar = () => {
                 <a href='/dialogs'>Messages</a>
             </div>
             <div>
-                <a href='#s'>News</a> { /* className={`${s.item} ${s.active}`} */ /* так мы пишем если два класса */ } 
+                <a href='/news'>News</a> { /* className={`${s.item} ${s.active}`} */ /* так мы пишем если два класса */ } 
             </div>
             <div>
-                <a href='#s'>Music</a>
+                <a href='/music'>Music</a>
             </div>
             <div>
-                <a href='#s'>Settings</a>
+                <a href='/settings'>Settings</a>
             </div>
         </nav>
     ) 

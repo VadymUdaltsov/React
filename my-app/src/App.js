@@ -7,6 +7,7 @@ import Dialogs from './components/Dialogs/Dialogs.jsx'
 /* import Header from './js_import/header';
 import Technologies from './js_import/technologies'; */
 
+
 /* const App = () => {  разметка в App это компанента 
   return (
     <div>

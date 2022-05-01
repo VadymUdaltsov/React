@@ -36,6 +36,16 @@ const App = () => {
   );
 }
 
+/* 
+<BrowserRouter>
+  <Routes>
+    <Route path='/name' element={<component-name />} />
+    <Route path='/name' element={<component-name />} />
+  </Routes>
+</BrowserRouter>
+
+*/
+
 
 
 

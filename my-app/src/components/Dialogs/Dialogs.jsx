@@ -6,24 +6,12 @@ const Dialogs = () => {
     return (
         <div className={s.dialogs}>
             <div className={s.dialog_items}>
-                <div className={s.dialog + ' ' + s.active}>
-                    <DialogLinks user='Vadym' url="/dialogs/1" /> 
-                </div>
-                <div className={s.dialog}>
-                    <DialogLinks user='Kirill' url="/dialogs/2" />
-                </div>
-                <div className={s.dialog}>
-                    <DialogLinks user='Yasya' url="/dialogs/3" />
-                </div>
-                <div className={s.dialog}>
-                    <DialogLinks user='Galina' url="/dialogs/4" />
-                </div>
-                <div className={s.dialog}>
-                    <DialogLinks user='Sergey' url="/dialogs/5" />
-                </div>
-                <div className={s.dialog}>
-                    <DialogLinks user='Kolya' url="/dialogs/6" />
-                </div>
+                <DialogLinks user='Vadym' url="/dialogs/1" />
+                <DialogLinks user='Kirill' url="/dialogs/2" />
+                <DialogLinks user='Yasya' url="/dialogs/3" />
+                <DialogLinks user='Galina' url="/dialogs/4" />
+                <DialogLinks user='Sergey' url="/dialogs/5" />
+                <DialogLinks user='Kolya' url="/dialogs/6" />
             </div>
             <div className={s.messages}>
                 <div className={s.message}>

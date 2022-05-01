@@ -5,13 +5,13 @@ const Navbar = () => {
     return (
         <nav className={s.nav}>
             <div>
-                <a href='#s'>Profile</a>
+                <a href='/profile'>Profile</a>
             </div>
             <div>
-                <a className={s.item} href='#s'>Messages</a>
+                <a href='/dialogs'>Messages</a>
             </div>
             <div>
-                <a className={`${s.item} ${s.active}`} href='#s'>News</a> {/* так мы пишем если два класса */}
+                <a href='#s'>News</a> { /* className={`${s.item} ${s.active}`} */ /* так мы пишем если два класса */ } 
             </div>
             <div>
                 <a href='#s'>Music</a>

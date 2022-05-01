@@ -9,7 +9,7 @@ import MyPosts from './MyPosts/MyPosts.jsx';
 
 const Content = () => {
     return (
-        <div className={s.content}>
+        <div>
             <div>
                 <img src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg' alt='img_bich' className={s.img_bich} />
             </div>

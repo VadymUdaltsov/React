@@ -11,10 +11,6 @@ nav a {
   font-size: 25px;
 }
 
-a:hover {
-  color: green;
-}
-
 .app-wrapper {
   display: grid;
   grid-template-areas: 

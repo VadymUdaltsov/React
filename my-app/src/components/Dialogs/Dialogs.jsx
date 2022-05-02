@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './Dialogs.module.css';
-import DialogLinks from './DialogsLinks';
+import DialogLinks from './DialogsComponents/DialogsLinks';
+import DialogsMessages from './DialogsComponents/Messages';
 
 const Dialogs = () => {
     return (
@@ -14,15 +15,9 @@ const Dialogs = () => {
                 <DialogLinks user='Kolya' url="/dialogs/6" />
             </div>
             <div className={s.messages}>
-                <div className={s.message}>
-                    Hi
-                </div>
-                <div className={s.message}>
-                    How are you?
-                </div>
-                <div className={s.message}>
-                    How is your progress?
-                </div>
+                <DialogsMessages message="Hi" />
+                <DialogsMessages message="How are you?" />
+                <DialogsMessages message="What are you doing?" />
             </div>
         </div>
     )

@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom'; /* обязательный импорт */
-import s from './Dialogs.module.css'
+import s from '../Dialogs.module.css'
 
 /* NavLink замена обычной линке a, но лучше неё */
 /* Синтаксис <NavLink to='/link'></NavLink> */

@@ -9,7 +9,7 @@ const MyPosts = () => {
         { message: "It's my first post.", likesCount: 15 }
     ];
 
-    let Posts = postData
+    let postElements = postData
     .map( m => <Post message={m.message} value={m.likesCount} /> );
 
     return (
@@ -24,7 +24,7 @@ const MyPosts = () => {
                 </div>
             </div>
             <div>
-                {Posts}
+                {postElements}
             </div>
         </div>
     ) 

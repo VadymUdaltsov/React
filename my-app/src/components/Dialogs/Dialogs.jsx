@@ -17,9 +17,11 @@ const Dialogs = () => {
         { url: '/dialogs/6', name: 'Kolya' }
     ];
 
-    let dialogsElements = dialogsData
-    .map( dialog => <DialogLinks user={dialog.name} url={dialog.url} /> ); /* Короче и лучше. Используем метод map() */
-    /* dialog - будет перебор каждого элемента в массиве dialogsData */
+    let messagesData = [
+        { message: 'Hi', id: 1 },
+        { message: 'How are you?', id: 2 },
+        { message: 'What are you doing?', id: 3 },
+    ];
 
     /* let dialogsElements = [
         <DialogLinks user={dialogsData[0].name} url={dialogsData[0].url} />,
@@ -30,19 +32,20 @@ const Dialogs = () => {
         <DialogLinks user={dialogsData[5].name} url={dialogsData[5].url} />
     ]; */
 
-    let messagesData = [
-        { message: 'Hi', id: 1 },
-        { message: 'How are you?', id: 2 },
-        { message: 'What are you doing?', id: 3 },
-    ];
+
+    let dialogsElements = dialogsData
+        .map(dialog => <DialogLinks user={dialog.name} url={dialog.url} />); /* Короче и лучше. Используем метод map() */
+    /* dialog - будет перебор каждого элемента в массиве dialogsData */
 
     let messagesElements = messagesData
         .map(messages => <DialogsMessages message={messages.message} /> );
 
+
+
+
     return (
         <div className={s.dialogs}>
             <div className={s.dialog_items}>
-
                 {dialogsElements} {/* React компилирует массив в html разметку */}
             </div>
             <div className={s.messages}>

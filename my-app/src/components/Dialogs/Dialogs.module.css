@@ -7,12 +7,28 @@
     padding: 10px;
 }
 
+.dialog_items img {
+        width: 30px;
+        border-radius: 50%;
+        height: 30px;
+        margin-right: 5px;
+}
+
+.dialog_items a {
+    display: flex;
+    align-items: center;
+}
+
 .dialog_items .active {
     color: gold;
 }
 
 .dialog{
+    margin-bottom: 15px;
+}
 
+.dialog:last-of-type {
+    margin-bottom: 0px;
 }
 
 .messages{

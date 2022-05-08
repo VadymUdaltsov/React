@@ -10,6 +10,7 @@ const DialogLinks = (props) => {
         <div className={s.dialog + ' ' + s.active}>
             <NavLink to={props.url} style={({ isActive }) => {
                 return { color: isActive ? 'gold' : '' }}}>
+                <img src="https://img.favpng.com/0/9/22/computer-icons-user-profile-clip-art-login-png-favpng-uFvp1vcYYXhXh1gMT3Cai7ikf.jpg" alt="user" />
                     {props.user}
             </NavLink>
         </div>

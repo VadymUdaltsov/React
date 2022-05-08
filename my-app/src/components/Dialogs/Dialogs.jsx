@@ -19,11 +19,11 @@ const Dialogs = (props) => {
     ]; */
 
 
-    let dialogsElements = props.dialogsData
+    let dialogsElements = props.state.dialogsData
         .map(dialog => <DialogLinks user={dialog.name} url={dialog.url} />); /* Короче и лучше. Используем метод map() */
     /* dialog - будет перебор каждого элемента в массиве dialogsData */
 
-    let messagesElements = props.messagesData
+    let messagesElements = props.state.messagesData
         .map(messages => <DialogsMessages message={messages.message} /> );
 
 

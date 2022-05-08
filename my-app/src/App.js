@@ -6,10 +6,6 @@ import Content from './components/Content/Content.jsx';
 import Dialogs from './components/Dialogs/Dialogs.jsx';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
-/* import Header from './js_import/header';
-import Technologies from './js_import/technologies'; */
-
-
 /* const App = () => {  разметка в App это компанента 
   return (
     <div>
@@ -27,8 +23,9 @@ const App = (props) => {
         <Navbar />
         <div className="app-wrapper-content">
           <Routes>
-            <Route path='/dialogs/*' element={<Dialogs dialogsData={props.dialogsData} messagesData={props.messagesData} />} /> {/* уникальная компонента маршрутизатора */} {/* Если у нас есть вкладки в ссылке dialogs и путь к ним прописан в url как /dialogs/messages и т.п то в path нужно ставить /dialogs/*. Звёздочка это важно */}
-            <Route path='/content' element={<Content postData={props.postData} />} />
+            <Route path='/dialogs/*' element={<Dialogs state={props.state.dialogsPage} />} />
+            {/* уникальная компонента маршрутизатора */} {/* Если у нас есть вкладки в ссылке dialogs и путь к ним прописан в url как /dialogs/messages и т.п то в path нужно ставить /dialogs/*. Звёздочка это важно */}
+            <Route path='/content' element={<Content state={props.state.profilePage} />} />
           </Routes>
         </div>
       </div>

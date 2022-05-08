@@ -3,25 +3,11 @@ import s from './Dialogs.module.css';
 import DialogLinks from './DialogsComponents/DialogsLinks';
 import DialogsMessages from './DialogsComponents/Messages';
 
-const Dialogs = () => {
+const Dialogs = (props) => {
     /* 2 уровня: */
     /* BLL - Business Logic Layer -- DATA */
     /* UI -- User Interface -- Components */
 
-    let dialogsData = [
-        { url: '/dialogs/1', name: 'Vadym' },
-        { url: '/dialogs/2', name: 'Kirill' },
-        { url: '/dialogs/3', name: 'Yasya' },
-        { url: '/dialogs/4', name: 'Galina' },
-        { url: '/dialogs/5', name: 'Sergey' },
-        { url: '/dialogs/6', name: 'Kolya' }
-    ];
-
-    let messagesData = [
-        { message: 'Hi', id: 1 },
-        { message: 'How are you?', id: 2 },
-        { message: 'What are you doing?', id: 3 },
-    ];
 
     /* let dialogsElements = [
         <DialogLinks user={dialogsData[0].name} url={dialogsData[0].url} />,
@@ -33,11 +19,11 @@ const Dialogs = () => {
     ]; */
 
 
-    let dialogsElements = dialogsData
+    let dialogsElements = props.dialogsData
         .map(dialog => <DialogLinks user={dialog.name} url={dialog.url} />); /* Короче и лучше. Используем метод map() */
     /* dialog - будет перебор каждого элемента в массиве dialogsData */
 
-    let messagesElements = messagesData
+    let messagesElements = props.messagesData
         .map(messages => <DialogsMessages message={messages.message} /> );
 
 

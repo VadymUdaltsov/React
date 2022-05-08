@@ -27,7 +27,7 @@ const App = (props) => {
         <Navbar />
         <div className="app-wrapper-content">
           <Routes>
-            <Route path='/dialogs/*' element={<Dialogs />} /> {/* уникальная компонента маршрутизатора */} {/* Если у нас есть вкладки в ссылке dialogs и путь к ним прописан в url как /dialogs/messages и т.п то в path нужно ставить /dialogs/*. Звёздочка это важно */}
+            <Route path='/dialogs/*' element={<Dialogs dialogsData={props.dialogsData} messagesData={props.messagesData} />} /> {/* уникальная компонента маршрутизатора */} {/* Если у нас есть вкладки в ссылке dialogs и путь к ним прописан в url как /dialogs/messages и т.п то в path нужно ставить /dialogs/*. Звёздочка это важно */}
             <Route path='/content' element={<Content postData={props.postData} />} />
           </Routes>
         </div>

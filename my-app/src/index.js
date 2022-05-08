@@ -4,10 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+let postData = [
+  { message: 'Hi, how are you?', likesCount: 5 },
+  { message: "It's my first post.", likesCount: 15 }
+];
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App postData={postData} />
   </React.StrictMode>
 );
 

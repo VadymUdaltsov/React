@@ -7,11 +7,12 @@ import ProfileInfo from './ProfileInfo/ProfileInfo';
     'img-bich': 'Content_img-bich__ubn4y'
 }; */
 
-const Content = () => {
+const Content = (props) => {
+
     return (
         <div>
             <ProfileInfo />
-            <MyPosts />
+            <MyPosts postData ={props.postData} />
         </div>
     ) 
     

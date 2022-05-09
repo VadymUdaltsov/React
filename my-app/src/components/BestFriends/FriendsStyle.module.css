@@ -1,0 +1,22 @@
+.friends  img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.friends {
+    margin-bottom: 10px;
+}
+
+.friends:last-of-type {
+    margin-bottom: 0px;
+}
+
+.friends__items {
+    display: flex;
+    align-items: center;
+}
+
+.friends__items img {
+    margin-right: 5px;
+}

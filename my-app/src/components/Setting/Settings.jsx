@@ -1,6 +1,7 @@
 import React from "react";
 import '../../App.css'
 import '../Header/Header.module.css'
+import s from './Settings.module.css'
 
 function Football() {
     const changer = () => {
@@ -12,16 +13,27 @@ function Football() {
             if (black.checked) { /* если выбрана эта точка то делай это  */
                  header.style.background = 'black';
                  navbar.style.background = 'black';
-                navbarA.style.background = 'white';
+                navbarA.forEach(function (a) {
+                    a.style.color = 'white';;
+                });
+            }
+            let origin = document.querySelector('.default');
+            if (origin.checked) { /* если выбрана эта точка то делай это  */
+                header.style.background = 'green';
+                navbar.style.background = 'burlywood';
+                navbarA.forEach(function (a) {
+                    a.style.color = 'black';
+                });
             }
         }
     }
 
     return (
-        <div>
+        <div className={s.setting__div}>
             <button onClick={changer} className='btn__in-3'>Change color:</button>
             {/* <input type='radio' className="origin" /> */}
-            <input type='radio' className="black" />
+            <p>Black Style:</p><input type='radio' className="black" name="theme" />
+            <p>Origin Style:</p><input type='radio' className="default" name="theme" />
         </div>
     );
 }

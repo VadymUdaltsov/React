@@ -27,7 +27,7 @@ const App = (props) => {
           <Routes>
             <Route path='/dialogs/*' element={<Dialogs state={props.state.dialogsPage} />} />
             {/* уникальная компонента маршрутизатора */} {/* Если у нас есть вкладки в ссылке dialogs и путь к ним прописан в url как /dialogs/messages и т.п то в path нужно ставить /dialogs/*. Звёздочка это важно */}
-            <Route path='/content' element={<Content state={props.state.profilePage} />} />
+            <Route path='/content' element={<Content state={props.state.profilePage} addPost={props.addPost} />} />
             <Route path='/setting' element={<Settings />} />
             <Route path='/friends' element={<BestFriends state={props.state.dialogsPage} />} />
           </Routes>
